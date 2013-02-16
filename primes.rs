@@ -1,5 +1,7 @@
 #[link(name = "primes", vers = "1.0")];
 pub fn prime_factors(number : int) -> ~[int] {
+    // make number mutable; this is fixed in later versions so args can
+    // be made mutable
     let mut number = number; 
     let mut prime_numbers = ~[];
     let mut candidate = 2;
